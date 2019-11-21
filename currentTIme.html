@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>currentTime</title>
+</head>
+<body>
+    <span id="result">test</span>
+    <script>
+        //new Data方法
+        var current = new Date();
+        //用result變數去取值span的值
+        var result = document.getElementById('result');
+        console.log(result); //整個元素會被取出
+        //時間寫法toLocaleString();
+        result.textContent = current.toLocaleString();
+        
+    </script>
+</body>
+</html>

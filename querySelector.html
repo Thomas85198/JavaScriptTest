@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>querySelector</title>
+</head>
+<style>
+    .external{
+        border: 2px solid black;
+    }
+    #liist{
+        border: 1px solid red;
+
+    }
+
+</style>
+<body>
+    <ul id="list">
+        <li class="external">a</li>
+        <li class="external">b</li>
+        <li class="external">c</li>
+    </ul>
+    <script>
+        var list = document.querySelectorAll('#list .external');
+        // console.log(list);
+        //因為出來也是nodelist所以跑回圈取出個別元素
+        for(var i =0 ; i < list.length; i++ ){
+            console.log(list[i]);
+        }
+    
+    </script>
+</body>
+</html>

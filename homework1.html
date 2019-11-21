@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>9X9乘法表</title>
+	<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+	<table>
+	<script>
+		var i, j;
+		document.write("<tr><td>"+i+"</td>");
+		for(i=1;i<=9;i++)
+		document.write("<td>"+i+"</td>");
+		document.write("<tr>");
+		while(j<=9){
+			document.write("<td>");
+			document.write(i+"*"+j+"="+i*j);
+			document.write("</td>");
+			j++
+		}
+		document.write("<tr>");	
+	</script>
+    </table>
+</body>
+</html>

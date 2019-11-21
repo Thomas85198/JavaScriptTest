@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>currentTime</title>
+</head>
+
+<body>
+    <form>
+        <label for="time">時間:</label>
+        <input type="text" id="id" name="time" size="20" value="00:00:00">
+    </form>
+    <script>
+        //先宣告時間方法
+        var current = new Date();
+        //取得input name = time的屬性元素
+        var nam = document.getElementsByName('time');
+        console.log(nam); //NodeList只有一個元素 input#id
+        //這回傳是元素群(nodelist)，所以使用nam[0]
+        nam[0].value = current.toLocaleTimeString();
+    </script>
+</body>
+
+</html>
