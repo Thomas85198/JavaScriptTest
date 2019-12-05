@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="wrap-inner">
+           <h1>六角西餐廳 - 顧客點餐篇</h1>
+           <p>服務生：Hello，請問您想要點什麼？</p>
+           <p>　顧客：給我 <input type="text" id="hamNumId" > 個漢堡，再 <input type="text" id="cokeNumId"> 杯可樂吧！</p>
+           <p>服務生：<input type="button" Id="countId" value="計算中">，好的，總計是<em id="totalId" class="tag"></em>元</p>
+       </div>
+   </div>
+    <script>
+    function count(){
+        var hamPrice = 50;
+        var cokePrice = 20;
+        var hamNum = parseInt(document.getElementById('hamNumId').value)*hamPrice;
+        var cokeNum = parseInt(document.getElementById('cokeNumId').value)*cokePrice;
+        document.getElementById('totalId').textContent=hamNum + cokeNum;
+
+    }
+    
+    //選擇文字表單跳出
+    function checkCount(e){
+        var str = e.target.value;
+        if(str==''){
+            //此欄位如果是空的話
+            // alert('此欄位不能為空');
+        }
+    }
+   
+    var el = document.getElementById('countId');
+    el.addEventListener('click', count, false);
+//focus所在焦點
+//blur離開焦點  
+    var ham = document.getElementById('hamNumId');
+    ham.addEventListener('focus', checkCount, false);
+
+    var coke = document.getElementById('cokeNumId');
+    coke.addEventListenr('blur', checkCount, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #setId{
+        color: blue;
+    }
+
+</style>
+<body>
+    <h1 class="titleClass">
+        <a href="#">title</a>
+    </h1>
+    <div class="str">hello</div>
+    <script>
+        var el = document.querySelector('.titleClass a');
+        //setAttribute改屬性
+        el.setAttribute('href', 'https://www.google.com');
+        var el2 = document.querySelector('.str');
+        // 要動態加上id名稱
+        el2.setAttribute('id', 'setId');
+        //取出class名稱後面那串getAttribute
+        var el3 = el.getAttribute('href');
+        console.log(el3);
+    </script> 
+</body>
+</html>

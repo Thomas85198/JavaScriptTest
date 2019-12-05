@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body class="body">
+    <a href="http://www.google.com.tw" class="link" style="margin-top:1800px; display: blocl">menu icons</a>
+    <script>
+        var el = document.querySelector('.link');
+        el.addEventListener('click', function(e){
+            //取消預設行為
+            //原本點擊跳轉到指定網頁
+            e.preventDefault();
+            console.log('test');
+            
+        })
+    </script>
+</body>
+</html>

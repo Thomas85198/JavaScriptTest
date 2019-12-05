@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#">123</a></li>
+        </ul>
+    </div>
+    <script>
+        var el = document.querySelector('.header');
+        el.addEventListener('click', function(e){
+            //e.target可以判斷現在點的是什麼東西
+            console.log(e.target);
+        },false)
+    </script>
+</body>
+</html>

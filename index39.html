@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 15px;
+        width: 15px;
+        background-color: green;
+        position: absolute;
+    }
+
+    .box1 {
+        top: 0px;
+        left: 50px;
+        animation: fontbulger 2s infinite;
+    }
+
+    .box2 {
+        top: 0px;
+        left: 90px;
+        animation: fontbulger 3s infinite;
+    }
+
+    .box3 {
+        top: 0px;
+        left: 140px;
+        animation: fontbulger 2.5s infinite;
+    }
+
+    .box4 {
+        top: 0px;
+        left: 180px;
+        animation: fontbulger 1.2s infinite;
+    }
+
+    .box5 {
+        top: 0px;
+        left: 230px;
+        animation: fontbulger 4s infinite;
+    }
+
+    .box6 {
+        top: 0px;
+        left: 250px;
+        animation: fontbulger 4s infinite;
+    }
+
+    @keyframes fontbulger {
+        0% {
+            top: 0px;
+        }
+
+        30% {
+            top: 150px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <script>
+        //mousemove滑鼠滑過去
+        var el = document.querySelector('.box');
+        for(var i = 1; i <= 6; i++){
+           el[i].addEventListener('mousemove', function(){
+               alert('輸了');
+           });
+        }
+
+        // el.addEventListener('mousemove', function () {
+        //     alert('1234');
+        // }, false)
+    </script>
+</body>
+
+</html>

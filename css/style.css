@@ -46,36 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html{
-    background: #000;
-    font-family: MicrosoftJhengHeiRegular;
-}
-*,*:before,*:after{
-    box-sizing: border-box;
-}
-.wrap{
-    background: url(../images/desktop.png) 50% 50%;
-    max-width: 1049px;
-    height: 420px;
-    margin: 200px auto;
-    padding-top: 50px;
-}
-.wrap-inner{
-    background: rgba(0,0,0,.65);
-    margin: 0 auto;
-    width: 600px;
+.gift{
+    width: 300px;
+    height: 300px;
     color: #fff;
-    padding: 50px;
-}
-.wrap-inner h1{
+    font-size: 18px;
     text-align: center;
+    background: #14CC99;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+.gift p{
+    text-align: left;
+    padding: 0;
+    margin: 10px 0;
+}
+.gift h2{
     font-size: 36px;
-    margin-bottom: .5em;
+    margin: 20px 0;
+    padding: 0;
 }
-.wrap-inner p{
-    font-size: 16px;
-    line-height: 24px;
-}
-.wrap-inner .tag{
-    color: yellow
+.gift .sendName{
+    text-align: right;
+    font-size: 12px;
 }

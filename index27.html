@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>每個農場農夫的名字</h1>
+    <ul class="list"></ul>
+    <script>
+        var farms = [
+            {
+                farmer: '卡斯伯',
+                dogs: ['張母士', '旁的'],
+            },
+            {
+                farmer: '查理',
+                dogs:['皮皮'],
+            }
+        ];
+
+        var el = document.querySelector('.list');
+        var farmsLength = farms.length;
+        // str='';
+        for(var i = 0; i < farmsLength; i++){
+            var str = document.createElement('li');
+            str.textContent=farms[i].farmer;
+            el.appendChild(str);
+        }
+    </script>
+</body>
+</html>

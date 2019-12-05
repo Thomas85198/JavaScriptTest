@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="wrap-inner">
+           <h1>六角西餐廳 - 壽星折扣篇</h1>
+           <p>服務生：Hello，請問您是本月壽星嗎？</p>
+           <p>　顧客：<em class="tag" id="birthdayId"></em></p>
+           <p>服務生：請問人還沒到齊對嗎？看預約名單您是預定兩個位置</p>
+           <p>　顧客：<em class="tag" id="peopleId"></em></p>
+       </div>
+   </div>
+    <script>
+        var myMonth = 7;
+        var thisMonth = 11;
+
+        var birthdayCheck = myMonth == thisMonth;
+        document.getElementById('birthdayId').textContent = birthdayCheck;
+        
+        var nowPeople = 1;
+        var totalPeople = 2; 
+        var allPeopleNoHereCheck = totalPeople !== nowPeople;
+        document.getElementById('peopleId').textContent = allPeopleNoHereCheck;
+    </script>
+</body>
+</html>

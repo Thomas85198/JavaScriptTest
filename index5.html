@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>我來到一個紅豆餅攤位，看到一個紅豆餅是 <em id="cookiePriceId"></em></p>
+    <p>我發現我的口袋剩下 <em id="myMoneyId"></em></p>
+    <p>還差<em id="totalId"></em>元</p>
+    <p>五個紅豆餅是 <em id="fiveCookie"></em>元</p>
+    <script>
+        var cookiePrice = 35;
+        var myMount = 10;
+        alert(35-10);
+
+        document.getElementById('cookiePriceId').textContent = cookiePrice;
+        document.getElementById('myMoneyId').textContent = myMount;
+        document.getElementById('totalId').textContent = cookiePrice - myMount;
+        document.getElementById('fiveCookie').textContent = 5*cookiePrice;
+    </script>
+</body>
+</html>

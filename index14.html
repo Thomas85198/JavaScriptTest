@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var light = 'red';
+        function check(light){
+            console.log(this.light);
+        }
+        switch(light){
+            default:
+            alert('沒有任何資料');
+            break;
+            case 'red':
+            alert('紅色');
+            check(this.light);
+            break;
+            case 'blue':
+            alert('藍色');
+            check(this.light);
+            break;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id只能用一次 -->
+    <!-- 將文字帶進去em -->
+    <!-- em是強調功能，斜體區別出來 -->
+    <p>這一顆紅豆餅是<em id="price"></em>元</p>
+    <h1 id="price"></h1>
+    
+    
+    <script>
+        var cookiePrice = 35;
+        //跳出提示框
+        alert(cookiePrice);
+        cookiePrice=25;
+        alert(cookiePrice);
+        document.getElementById('price').textContent=cookiePrice;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var farms = [
+            {
+                farmer: '卡斯伯', 
+                field: 6
+            },
+            {
+                farmer: '查理',
+                field: 10
+            }   
+        ]
+
+        //因為有時候是從資料庫取出資料根本不知道有幾筆，所以要.length去取
+        var farmsTotal = farms.length;
+        for(var i=0; i<farmsTotal; i++){
+            console.log(farms[i].farmer);
+            console.log('第'+(i+1)+'農場主人是'+farms[i].farmer);
+        }
+    </script>
+</body>
+</html>

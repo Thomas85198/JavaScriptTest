@@ -79,3 +79,6 @@ html{
 .wrap-inner .tag{
     color: yellow
 }
+.wrap-inner input[type=text]{
+    width: 30px;
+}

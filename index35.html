@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <ul style="padding-top:100px;border:1px solid black">
+            <li>
+                <a href="#">123</a>
+            </li>
+        </ul>
+    </div>
+   <script>
+       var el = document.querySelector('.header');
+       el.addEventListener('click', function(e){
+            console.log(e.target.nodeName);
+            //e可以查看點擊資訊加
+       }, false)
+   </script> 
+</body>
+</html>

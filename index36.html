@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select id="areaId">
+        <option value="前鎮區">前鎮區</option>
+        <option value="苓雅區">苓雅區</option>
+    </select>
+    <ul class="list"></ul> 
+    <script>
+        var area = document.getElementById('areaId');
+        var list = document.querySelector('.list');
+        var country = [
+            {
+                farmer: '查理',
+                place: '前鎮區'
+            },
+            {
+                farmer: '卡斯伯',
+                place: '苓雅區'
+            },
+            {
+                farmer: '小花',
+                place: '苓雅區'
+            }
+        ]
+        var len = country.length;
+        console.log(len);
+        function updateList(e){
+            var select = e.target.value;
+            var str = '';
+            //選取到的value值是什麼
+            //先空字串，跑完再一次加到li裡面
+            for(var i = 0; i<len; i++){
+                if(select == country[i].place){
+                    //如果是該區的話就給進去
+                    str+='<li>'+country[i].farmer+'</li>';
+                }
+            }
+            list.innerHTML = str;
+        }
+        area.addEventListener('change', updateList, false);
+        //變更資料觸發changer事件
+    
+    
+    </script>   
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titleId" class="titleClass">text<em>12</em></h1>
+    <h1 id="titleId" class="titleClass">text<em>12</em></h1>
+    <script>
+        // var el = document.getElementById('titleId');
+        // css寫法querySelector，可以寫兩個以上元素
+        var el = document.querySelectorAll('.titleClass em');
+        // console.log(el);
+        // el.textContent = '1231';
+        // console.log(el.innerHTML);
+        el[0].textContent = '123';
+        el[1].textContent = '1234';
+        for(var i = 0; i<el.length; i++){
+            el[i].textContent= i+'123';
+        }
+    </script>
+</body>
+</html>

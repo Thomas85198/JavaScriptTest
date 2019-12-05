@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .blue{
+        color: blue;
+    }
+</style>
+<body>
+    <h1 class="title"></h1>
+    <script>
+        //新增一個em元素
+        var str = document.createElement('em');
+        str.textContent = '1234';
+        str.setAttribute('class','blue');
+        //把節點連上去增加子節點
+        document.querySelector('.title').appendChild(str);
+    </script>
+</body>
+</html>
